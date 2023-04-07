@@ -87,7 +87,9 @@ def load_students(file_name):
 
 def main(command_line=None):
     file_parser = argparse.ArgumentParser(add_help=False)
-    file_parser.add_argument("-d", "--data", action="store", required=False, help="The data file name")
+    file_parser.add_argument(
+        "-d", "--data", action="store", required=False, help="The data file name"
+    )
 
     parser = argparse.ArgumentParser("students")
     parser.add_argument("--version", action="version", version="%(prog)s 0.1.0")
